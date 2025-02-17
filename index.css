@@ -1,6 +1,6 @@
 body{
   width: 100%vw;
-  background-color: rgb(31, 2, 2);
+  background-color: rgb(31, 2, 2)!important;
 }
 
 .navbar-nav{

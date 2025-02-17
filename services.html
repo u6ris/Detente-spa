@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Détente Spa | Un espace où mieux vous sentir </title>
+        <link rel="stylesheet" href="services.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="reservation.js"></script>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target=".navbar">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top justify-content-between" style="height: 70px;">
+        <div class="navbar-item">
+          <a href="index.html" class="navbar-brand">
+            <span class="navbar-text pl-5 text-light">Détente Spa</span>
+          </a>
+        </div>
+        <div class="navbar-item pr-5">
+          <ul class="navbar-nav">
+            <li class="navbar-item">
+              <a class="nav-link" href="reservation.html">Réservez</a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link" href="about.html">À propos</a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link" href="#section4">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="section1" class="container-fluid">
+        <p class="text-center">Nous prenons soin de vous</p>
+      </div>
+      <div id="section2" class="container-fluid">
+        <ul class="services-shortcut">
+            <li>
+              <a class="nav-link" href="#hammam">Hammam</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#massages">Massages</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#soins">Soins</a>
+            </li>
+          </ul>
+      </div>
+      <div class="services">
+        <div id="hammam" class="container justify-content-center">
+          <h2>Hammam</h2>
+          <p>Le Hammam est un bain de vapeur chaud qui régénère et purifie le corps. Le rituel nécessite de rester dans un espace avec une haute humidité, et une température relativement basse quoique supérieure à la moyenne.
+          </p>
+          <div class="reserv-hammam">
+            <button id="reservation-button" onclick="reserver()">Réservez</button>
+          </div>
+        </div>
+        <div id="massages" class="container justify-content-center">
+          <h2>Massages</h2>
+          <div class="container pt-4">
+            <div class="row row-cols-3">
+              <div class="col">
+                <div class="container-fluid service-item">
+                  <div class="row">
+                      <img style="height: 230px;">
+                  </div>
+                  <div class="row">
+                      <div class="service-details">                
+                        <p class="fw-bold">Massage californien</p>
+                        <p class="fw-bold">$120</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <p class="fst-italic">60m</p>
+                  </div>
+                  <div class="row">
+                      <div>
+                        <button data-bs-toggle="collapse" data-bs-target="#massage-1" id="show-more">Découvrez plus +</button>
+                      </div>            
+                      <div id="massage-1" class="collapse">
+                        <p>Le massage californien se caractérise par des mouvements continus, fluides et très doux. Il procure une détente maximale. La détente peut être maximisée par un massage particulier de certains centres nerveux.
+                        </p>
+                      </div>
+                  </div>
+                  <div class="row reservation-area">
+                    <button id="reservation-button" onclick="reserver()">Réservez</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="container-fluid service-item">
+                  <div class="row">
+                      <img style="height: 230px;">
+                  </div>
+                  <div class="row">
+                      <div class="service-details">                
+                        <p class="fw-bold">Massage Shiatsu</p>
+                        <p class="fw-bold">$130</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <p class="fst-italic">1h30m</p>
+                  </div>
+                  <div class="row">
+                      <div>
+                        <button data-bs-toggle="collapse" data-bs-target="#massage-2" id="show-more">Découvrez plus +</button>
+                      </div>            
+                      <div id="massage-2" class="collapse">
+                        <p>Le massage Shiatsu est pratiqué depuis des milliers d'années au Japon. Il s'effectue par une pression des pouces ou des doigts.Le corps renferme des méridiens associés aux organes et le massage Shiatsu consiste également à se servir de ces méridiens pour soulager certains malaises ou douleurs que pourrait ressentir le sujet.
+                        </p>
+                      </div>
+                  </div>
+                  <div class="row reservation-area">
+                    <button id="reservation-button" onclick="reserver()">Réservez</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="row">
+                      <img style="height: 230px;">
+                  </div>
+                  <div class="row">
+                      <div class="service-details">                
+                        <p class="fw-bold">Massage thaïlandais</p>
+                        <p class="fw-bold">$168</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <p class="fst-italic">60m</p>
+                  </div>
+                  <div class="row">
+                      <div>
+                        <button data-bs-toggle="collapse" data-bs-target="#massage-3" id="show-more">Découvrez plus +</button>
+                      </div>            
+                      <div id="massage-3" class="collapse">
+                        <p>Le massage thaïlandais rassemble des techniques différentes permettant un relâchement des tensions physiques et d'évacuer le négativisme causé par les mauvaises émotions. Il apporte l'équilibre en débloquant les tensions musculaires. Il apporte aussi un grand soulagement aux migraines, aux insomnies et à l'angoisse.
+                        </p>
+                      </div>
+                  </div>
+                  <div class="row reservation-area">
+                    <button id="reservation-button" onclick="reserver()">Réservez</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="row">
+                      <img style="height: 230px;">
+                  </div>
+                  <div class="row">
+                      <div class="service-details">                
+                        <p class="fw-bold">Massage aux pierres chaudes</p>
+                        <p class="fw-bold">$150</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <p class="fst-italic">1h15m</p>
+                  </div>
+                  <div class="row">
+                      <div>
+                        <button data-bs-toggle="collapse" data-bs-target="#massage-4" id="show-more">Découvrez plus +</button>
+                      </div>            
+                      <div id="massage-4" class="collapse">
+                        Le massage aux pierres chaudes utilise des pierres volcaniques rondes, douces, enduites d'huiles essentielles chaudes et à effet drainant. Ces pierres renferment de nombreux minéraux apaisant le mental et le physique. La chaleur aide au relâchement musculaire et oblige le corps à relaxer très profondément en redonnant vitalité et énergie.
+                      </div>
+                  </div>
+                  <div class="row reservation-area">
+                    <button id="reservation-button" onclick="reserver()">Réservez</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="row">
+                      <img style="height: 230px;">
+                  </div>
+                  <div class="row">
+                      <div class="service-details">                
+                        <p class="fw-bold">Massage suédois</p>
+                        <p class="fw-bold">$130</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <p class="fst-italic">1h30m</p>
+                  </div>
+                  <div class="row">
+                      <div>
+                        <button data-bs-toggle="collapse" data-bs-target="#massage-5" id="show-more">Découvrez plus +</button>
+                      </div>            
+                      <div id="massage-5" class="collapse">
+                        Le massage suédois est exercé tout en douceur avec fermeté en incluant des huiles naturelles. Son action est tonifiante. Il est particulièrement efficace pour les personnes actives, mais les personnes plus sédentaires en seront tout aussi satisfaites. Ce type de massage est typiquement européen, comportant de longs mouvements en massant les différentes couches musculaires.
+                      </div>
+                  </div>
+                  <div class="row reservation-area">
+                    <button id="reservation-button" onclick="reserver()">Réservez</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="soins"  class="container justify-content-center">
+          <h2>Soins</h2>
+          <div class="container pt-4">
+            <div class="row row-cols-3">
+              <div class="col">
+                <div class="container-fluid service-item">
+                  <div class="row">
+                      <img style="height: 230px;">
+                  </div>
+                  <div class="row">
+                      <div class="service-details">                
+                        <p class="fw-bold">Enveloppement à la boue</p>
+                        <p class="fw-bold">$100</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <p class="fst-italic">1h20m</p>
+                  </div>
+                  <div class="row">
+                      <div>
+                        <button data-bs-toggle="collapse" data-bs-target="#massage-1" id="show-more">Découvrez plus +</button>
+                      </div>            
+                      <div id="massage-1" class="collapse">
+                        Le massage californien se caractérise par des mouvements continus, fluides et très doux. Il procure une détente maximale. La détente peut être maximisée par un massage particulier de certains centres nerveux.
+                      </div>
+                  </div>
+                  <div class="row reservation-area">
+                    <button id="reservation-button" onclick="reserver()">Réservez</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="container-fluid service-item">
+                  <div class="row">
+                      <img style="height: 230px;">
+                  </div>
+                  <div class="row">
+                      <div class="service-details">                
+                        <p class="fw-bold">Enveloppement avec des algues</p>
+                        <p class="fw-bold">$130</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <p class="fst-italic">1h30m</p>
+                  </div>
+                  <div class="row">
+                      <div>
+                        <button data-bs-toggle="collapse" data-bs-target="#massage-2" id="show-more">Découvrez plus +</button>
+                      </div>            
+                      <div id="massage-2" class="collapse">
+                        Le massage Shiatsu est pratiqué depuis des milliers d'années au Japon. Il s'effectue par une pression des pouces ou des doigts.Le corps renferme des méridiens associés aux organes et le massage Shiatsu consiste également à se servir de ces méridiens pour soulager certains malaises ou douleurs que pourrait ressentir le sujet.
+                      </div>
+                  </div>
+                  <div class="row reservation-area">
+                    <button id="reservation-button" onclick="reserver()">Réservez</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="row">
+                      <img style="height: 230px;">
+                  </div>
+                  <div class="row">
+                      <div class="service-details">                
+                        <p class="fw-bold">Soin du visage</p>
+                        <p class="fw-bold">$80</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <p class="fst-italic">60m</p>
+                  </div>
+                  <div class="row">
+                      <div>
+                        <button data-bs-toggle="collapse" data-bs-target="#massage-3" id="show-more">Découvrez plus +</button>
+                      </div>            
+                      <div id="massage-3" class="collapse">
+                        Le massage thaïlandais rassemble des techniques différentes permettant un relâchement des tensions physiques et d'évacuer le négativisme causé par les mauvaises émotions. Il apporte l'équilibre en débloquant les tensions musculaires. Il apporte aussi un grand soulagement aux migraines, aux insomnies et à l'angoisse.
+                      </div>
+                  </div>
+                  <div class="row reservation-area">
+                    <button id="reservation-button" onclick="reserver()">Réservez</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="row">
+                      <img style="height: 230px;">
+                  </div>
+                  <div class="row">
+                      <div class="service-details">                
+                        <p class="fw-bold">Soin des mains et des pieds</p>
+                        <p class="fw-bold">$130</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <p class="fst-italic">1h15m</p>
+                  </div>
+                  <div class="row">
+                      <div>
+                        <button data-bs-toggle="collapse" data-bs-target="#massage-4" id="show-more">Découvrez plus +</button>
+                      </div>            
+                      <div id="massage-4" class="collapse">
+                        Le massage aux pierres chaudes utilise des pierres volcaniques rondes, douces, enduites d'huiles essentielles chaudes et à effet drainant. Ces pierres renferment de nombreux minéraux apaisant le mental et le physique. La chaleur aide au relâchement musculaire et oblige le corps à relaxer très profondément en redonnant vitalité et énergie.
+                      </div>
+                  </div>
+                  <div class="row reservation-area">
+                    <button id="reservation-button" onclick="reserver()">Réservez</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="section4">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-1">
+              <div class="vr "></div>
+            </div>
+            <div id="footer-separator" class="col-3 pt-4">
+              <ul>
+                  <li>1234 Rue du Spa</li>
+                  <li>Ottawa, Ontario</li>
+                  <li>A1A 2B3</li>
+                  <li>(123) 456-7890</li>
+                  <li>detentespa@gmail.com</li>
+              </ul>
+            </div>
+            <div class="col-3 pt-4">
+              <ul>
+                  <li>Lundi au Jeudi</li>
+                  <li>9h à 21h</li>
+                  <li>Vendredi et Samedi</li>
+                  <li>9h à 23h</li>
+                  <li>Dimanche</li>
+                  <li>10h à 00h</li>
+              </ul>
+            </div>
+          </div> 
+          <div class="copyright text-center">
+            © 2024 Détente Spa. All rights reserved.
+          </div>   
+        </div> 
+      </footer>
+      </body>
+</html>

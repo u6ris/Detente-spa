@@ -1,0 +1,77 @@
+body{
+  width: 100%vw;
+  background-color: rgb(31, 2, 2);
+}
+
+.navbar-nav{
+  display: flex;
+  gap: 20px;
+}
+
+nav{
+  padding: 0 50px;
+  font-size: 20px;
+  background-color: rgb(39, 1, 1);
+  box-shadow: 0px 5px 10px rgb(25, 0, 0);
+}
+
+#section1{
+  background-image: url(images/christin-hume-0MoF-Fe0w0A-unsplash.jpg);
+  background-size: cover;
+  color: rgb(243, 246, 242);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  height: 700px;
+  padding: 50px 0 0 300px;
+}
+
+
+
+#section2{
+  background-image: url(images/engin-akyurt-SMwCQZWayj0-unsplash.jpg);
+  background-size: cover;
+  color: rgb(243, 246, 242);
+  height: 700px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-left: 20px;
+  height: 700px;
+  padding:200px 390px 0 0;
+}
+
+#section3{
+  background-image: url(images/bruno-nascimento-eo11MS0FSnk-unsplash.jpg);
+  background-size: cover;
+  color: rgb(243, 246, 242);
+  height: 700px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: right;
+}
+
+#section3 a{
+  text-decoration: none!important;
+  color: rgb(243, 246, 242);
+}
+
+footer{
+  background-color: rgb(31, 2, 2);
+  height: 500px;
+  color: rgb(245, 225, 222);
+  padding: 100px 0 0 200px;
+}
+
+footer .container{
+  padding-left: 80px
+}
+
+#footer-separator{
+  border-left: solid rgb(79, 0, 0);
+}
